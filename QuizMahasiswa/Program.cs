@@ -16,8 +16,7 @@ namespace QuizMahasiswa
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MasterBarang032());
-            Application.Run(new ReportBarang010());
+            Application.Run(new MainForm());
         }
     }
 }

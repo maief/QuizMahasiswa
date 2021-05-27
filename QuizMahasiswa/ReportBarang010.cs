@@ -55,7 +55,7 @@ namespace QuizMahasiswa
             }
 
             var savefiledialoge = new SaveFileDialog();
-            savefiledialoge.FileName = filename;
+            savefiledialoge.FileName = "PDFQuizMahasiswa";
             savefiledialoge.DefaultExt = ".pdf";
             if (savefiledialoge.ShowDialog() == DialogResult.OK)
             {
@@ -79,7 +79,7 @@ namespace QuizMahasiswa
             Microsoft.Office.Interop.Excel._Worksheet worksheet = null;
             worksheet = workbook.Sheets["Sheet1"];
             worksheet = workbook.ActiveSheet;
-            worksheet.Name = "DetailProduct";
+            worksheet.Name = "DetailBarang";
 
             for (int i = 1; i < dataGridView1.Columns.Count + 1; i++)
             {
@@ -96,7 +96,7 @@ namespace QuizMahasiswa
 
             //save excel
             var saveFileDialogeExcel = new SaveFileDialog();
-            saveFileDialogeExcel.FileName = "output excel";
+            saveFileDialogeExcel.FileName = "ExcelQuizMahasiswa";
             saveFileDialogeExcel.DefaultExt = ".xlsx";
 
             if (saveFileDialogeExcel.ShowDialog() == DialogResult.OK)
